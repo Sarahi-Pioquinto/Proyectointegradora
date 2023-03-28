@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">    
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-<title>Combis</title>
+    <title>QrTransport </title>
 </head>
 <body>
 
     <header>
-        <div class="logo">QrTransport</div>
+        <a href="Index.html"><div class="logo">QrTransport</div></a>
         <div class="hamburger">
             <div class="line"></div>           
             <div class="line"></div>
@@ -20,16 +21,13 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="#" class="active">Home</a>
+                    <a href="Index.html" class="active">Home</a>
                 </li>
                 <li>
-                    <a href="#">Mi cuenta</a>
+                    <a href="Cuenta.html">Mi cuenta</a>
                 </li>
                 <li>
-                    <a href="#">Ayuda</a>
-                </li>
-                <li>
-                    <a href="#">Conocenos</a>
+                    <a href="Ayuda.html">Ayuda</a>
                 </li>
             </ul>
            
@@ -38,44 +36,57 @@
 
 
 
+    <script>
+        hamburger= document.querySelector(".hamburger");
+        hamburger.onclick  = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 
-<h1>Ruta 44</h1>
+
+<h1>RUTA 44</h1>
+
+<br><br>
+
+<div class="lugares"><h2>Lugares por donde transita la unidad</h2></div>
+<br>
+<div class="texto-combis"><p>La  RUTA 44 de autobús (Ramal 1, Las Cuartillas - Galaxia La Calera (Ida)) tiene 87 paradas desde Calle 23 Norte, 4410 hasta Cáncer, 67.
+
+    Horarios del autobús RUTA 44 para la próxima semana: comienza a operar a las 6:00 y finaliza a las 10:00. Los días de operación esta semana son: todos los días..<p></div>
+
+    <br><br><iframe src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d32958.38334000239!2d-97.36397159629858!3d18.43136706760093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m3!3m2!1d18.4239915!2d-97.36810299999999!4m3!3m2!1d18.4361125!2d-97.3738903!4m3!3m2!1d18.4501176!2d-97.38442599999999!4m3!3m2!1d18.454461!2d-97.3909315!4m3!3m2!1d18.4668414!2d-97.39139399999999!4m3!3m2!1d18.4554497!2d-97.3895749!4m3!3m2!1d18.450176499999998!2d-97.3843986!4m3!3m2!1d18.4282508!2d-97.3663998!4m3!3m2!1d18.4238859!2d-97.3681204!5e0!3m2!1ses!2smx!4v1679990501124!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br><br><br>
     
-
-        <div class="map-responsive">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d30278.668736360865!2d-97.39672835749346!3d18.445863207890138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m3!3m2!1d18.4247258!2d-97.3718739!4m3!3m2!1d18.4409635!2d-97.3778785!4m3!3m2!1d18.4543566!2d-97.38759429999999!4m3!3m2!1d18.4569167!2d-97.3895524!5e0!3m2!1ses!2smx!4v1675356218756!5m2!1ses!2smx" width="600"  height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        
-        </div>
-
-
 <footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <img src="img/imagen1.png" alt="Logo de QrTransport">
-                </a>
-            </figure>
-        </div>
-        <div class="box">
-            <h2>SOBRE NOSOTROS</h2>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-        </div>
-        <div class="box">
-            <h2>SIGUENOS</h2>
-            <div class="red-social">
-                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/" class="fa fa-twitter"></a>
-                <a href="https://youtube.com/" class="fa fa-youtube"></a>
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/Logo-QrTransport.png" alt="Logo de QrTransport">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p style="text-align: justify;">Somos una empresa innovadora y comprometida en la creación de software de la más alta calidad, brindando las mejores soluciones tecnológicas
+                </p>
+                <p>Una empresa creadora de sistemas eficientes y de mejora continua, siendo reconocida a nivel regional y nacional por entregar productos excelentes</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://youtube.com/" class="fa fa-youtube"></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="grupo-2">
-        <small>&copy; 2023 <b>QrTransport</b> - Pagina creada para fines educativos</small>
-    </div>
-</footer>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>QrTransport</b> - Pagina creada para fines educativos</small>
+        </div>
+    </footer>
 
     
 </body>

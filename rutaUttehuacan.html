@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>QrTransport </title>
 </head>
 <body>
 
-
     <header>
-        <div class="logo">QrTransport</div>
+        <a href="Index.html"><div class="logo">QrTransport</div></a>
         <div class="hamburger">
             <div class="line"></div>           
             <div class="line"></div>
@@ -23,39 +21,46 @@
         <nav class="nav-bar">
             <ul>
                 <li>
-                    <a href="Inicio.html" class="active">Home</a>
+                    <a href="Index.html" class="active">Home</a>
                 </li>
                 <li>
                     <a href="Cuenta.html">Mi cuenta</a>
                 </li>
                 <li>
-                    <a href="#">Ayuda</a>
-                </li>
-                <li>
-                    <a href="#">Conocenos</a>
+                    <a href="Ayuda.html">Ayuda</a>
                 </li>
             </ul>
            
         </nav>
     </header>
-<!---->
 
-<div class="login-container">
-    <div class="login-info-container">
-        <img width="200px" src="img/cuenta.png" alt="">
-      <p>Elegir su cuenta</p>
-      <form class="inputs-container">
-          
-          <button  class="btn">PASAJERO</button>
-          <button  class="btn">CHOFER</button>
-          <button  class="btn">ADMINISTRADOR</button>
-        </form>
-    </div>
-      <img class="image-container" src="img/cuenta1.png" alt="">
+
+
+    <script>
+        hamburger= document.querySelector(".hamburger");
+        hamburger.onclick  = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+
+<h1>RUTA UNIVERSIDAD TECNOLOGICA DE TEHUACAN</h1>
+
+<br><br>
+
+<div class="lugares"><h2>Lugares por donde transita la unidad</h2></div>
+<br>
+<div class="texto-combis"><p>Los lugares por donde la combi de la UNIVERSIDAD TECNOLOGICA DE TEHUACAN es san pablo, san diego,centro acuatico de tehuacan, molino, prepa ferderal entre otros lugares hasta llegar a su base que se encuentre en frente de Plaza Cristal <p>
+<br>    
+    <p> Horarios de la RUTA 10 para la próxima semana: comienza a operar a las 6:00 y finaliza a las 22:00. Los días de operación esta semana son: todos los días.</p>
 </div>
 
-
-    <footer class="pie-pagina">
+    <br><br>
+<div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d70532.56892351997!2d-97.3659250353756!3d18.46383391782839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x85c5bc949e873fa1%3A0xba8168c5cffd0772!2sUniversidad%20Tecnol%C3%B3gica%20de%20Tehuac%C3%A1n!3m2!1d18.4146449!2d-97.34407589999999!4m3!3m2!1d18.423812299999998!2d-97.3412669!4m3!3m2!1d18.4304904!2d-97.3587608!4m3!3m2!1d18.4607726!2d-97.37084709999999!4m3!3m2!1d18.4626654!2d-97.3823484!4m3!3m2!1d18.464599!2d-97.3826488!4m3!3m2!1d18.4648245!2d-97.3892925!4m3!3m2!1d18.464942999999998!2d-97.3937648!4m3!3m2!1d18.4636353!2d-97.3940641!4m3!3m2!1d18.462905!2d-97.3906784!5e0!3m2!1ses!2smx!4v1679989173517!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br><br><br>
+    
+<footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
@@ -85,5 +90,6 @@
         </div>
     </footer>
 
+    
 </body>
 </html>
